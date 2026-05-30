@@ -29,4 +29,40 @@ if (document.querySelectorAll(".mi-tarjeta").length > 0) {
             });
         });
     }
+
+if (document.getElementById("contenedor-listado")) {
+        const alimentos = [
+            { nombre: "Manzana", categoria: "fruta" },
+            { nombre: "Banana", categoria: "fruta" },
+            { nombre: "Frutilla", categoria: "fruta" },
+            { nombre: "Medialuna", categoria: "panaderia" },
+            { nombre: "Vigilante", categoria: "panaderia" },
+            { nombre: "Churro", categoria: "panaderia" }
+        ];
+
+        const contenedorListado = document.getElementById("contenedor-listado");
+        const btnTodos = document.getElementById("btn-todos");
+        const btnFrutas = document.getElementById("btn-frutas");
+
+        const listaRender = (arregloFiltrado) => {
+            contenedorListado.innerHTML = "";
+            arregloFiltrado.forEach(item => {
+                const div = document.createElement("div");
+                div.className = "tarjeta";
+                div.textContent = item.nombre;
+                contenedorListado.appendChild(div);
+            });
+        };
+
+        listaRender(alimentos);
+
+        btnTodos.addEventListener("click", () => {
+            listaRender(alimentos);
+        });
+
+        btnFrutas.addEventListener("click", () => {
+            const frutas = alimentos.filter(alimento => alimento.categoria === "fruta");
+            listaRender(frutas);
+        });
+    }    
 });
