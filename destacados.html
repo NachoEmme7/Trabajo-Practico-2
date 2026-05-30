@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destacados</title>
+    <link rel="stylesheet" href="estilos.css">
+
 </head>
 <body>
     <nav>
@@ -12,13 +14,31 @@
     <main>
         <h2>Elementos Detacados</h2>
         <p>Hace click en las tarjetas para seleccionarlas:</p>
-        <p>Tarjetas seleccionadas: <span id="contenedor-seleccionadas">0</span></p>
+        <p>Tarjetas seleccionadas: <span id="contador-seleccionadas">0</span></p>
     
-     <div class="contador-tarjetas"></div>   
-        <div class="tarjeta mi-tarjeta">Hamburguesa</div>
-        <div class="tarjeta mi-tarjeta">Pizza</div>
-        <div class="tarjeta mi-tarjeta">Sushi</div>
-        <div class="tarjeta mi-tarjeta">Tacos</div>
+     <section class="contador-tarjetas">
+            
+            <article class="tarjeta mi-tarjeta">
+                <strong>Libro: Cien años de soledad</strong>
+                <p>Una obra maestra del realismo mágico latinoamericano.</p>
+            </article>
+
+            <article class="tarjeta mi-tarjeta">
+                <strong>Destino: Las Cataratas del Iguazú</strong>
+                <p>Una de las siete maravillas naturales del mundo.</p>
+            </article>
+
+            <article class="tarjeta mi-tarjeta">
+                <strong>Tecnología: Python</strong>
+                <p>Lenguaje de programación versátil y fácil de aprender.</p>
+            </article>
+
+            <article class="tarjeta mi-tarjeta">
+                <strong>Hobby: Fotografía urbana</strong>
+                <p>Capturar la esencia y el movimiento de las calles.</p>
+            </article>
+
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
