@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btnContar.addEventListener("click", () => {
             resultadoConteo.textContent = `El menú tiene ${meriendas.length} opciones disponibles.`;
         });
-}
+    }
 
 if (document.querySelectorAll(".mi-tarjeta").length > 0) {
         const tarjetas = document.querySelectorAll(".mi-tarjeta");
