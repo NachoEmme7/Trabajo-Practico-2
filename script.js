@@ -37,7 +37,10 @@ if (document.getElementById("contenedor-listado")) {
             { nombre: "Frutilla", categoria: "fruta" },
             { nombre: "Medialuna", categoria: "panaderia" },
             { nombre: "Vigilante", categoria: "panaderia" },
-            { nombre: "Churro", categoria: "panaderia" }
+            { nombre: "Churro", categoria: "panaderia" },
+            { nombre: "Asado", categoria: "carne" },
+            { nombre: "Sandia", categoria: "fruta" },
+            { nombre: "Flan", categoria: "postre" },
         ];
 
         const contenedorListado = document.getElementById("contenedor-listado");
